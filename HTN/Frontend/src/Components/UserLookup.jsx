@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputBar from "./InputBar";
 import NetworkGraph from "./NetworkGraph"; // Import NetworkGraph
 import NetworkGraph2 from "./NetworkGraph2"; // Import NetworkGraph2
+import '../App.css';  // Import App.css, adjust the path as necessary
 
 function UserLookup() {
   const [searchQuery1, setSearchQuery1] = useState(""); // State for the first input
@@ -23,41 +24,39 @@ function UserLookup() {
     setSearchQuery2("");
   };
 
+  // Determine which graph to show based on input
+  const showNetworkGraph = searchQuery1.toLowerCase() === "julian";
+  const showNetworkGraph2 = searchQuery2.toLowerCase() === "matthew";
+
   return (
     <div className="lookUpContainer">
-      {/* First Search Bar */}
-      <InputBar
-        value={searchQuery1}
-        onChange={({ target }) => {
-          setSearchQuery1(target.value);
-        }}
-        handleSearch={handleSearch1}
-        onClearSearch={onClearSearch1}
-      />
+      <div className="search-bars">
+        {/* First Search Bar */}
+        <InputBar
+          value={searchQuery1}
+          onChange={({ target }) => {
+            setSearchQuery1(target.value);
+          }}
+          handleSearch={handleSearch1}
+          onClearSearch={onClearSearch1}
+        />
 
-      {/* Conditionally render NetworkGraph if "julian" is typed */}
-      {searchQuery1.toLowerCase() === "julian" && (
-        <div className="graph-container">
-          <NetworkGraph />
-        </div>
-      )}
+        {/* Second Search Bar */}
+        <InputBar
+          value={searchQuery2}
+          onChange={({ target }) => {
+            setSearchQuery2(target.value);
+          }}
+          handleSearch={handleSearch2}
+          onClearSearch={onClearSearch2}
+        />
+      </div>
 
-      {/* Second Search Bar */}
-      <InputBar
-        value={searchQuery2}
-        onChange={({ target }) => {
-          setSearchQuery2(target.value);
-        }}
-        handleSearch={handleSearch2}
-        onClearSearch={onClearSearch2}
-      />
-
-      {/* Conditionally render NetworkGraph2 if "Matthew" is typed */}
-      {searchQuery2.toLowerCase() === "matthew" && (
-        <div className="graph-container">
-          <NetworkGraph2 />
-        </div>
-      )}
+      {/* Conditionally render one graph at a time */}
+      <div className="graph-container">
+        {showNetworkGraph && <NetworkGraph />}
+        {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
+      </div>
     </div>
   );
 }

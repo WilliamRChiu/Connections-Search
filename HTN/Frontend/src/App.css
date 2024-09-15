@@ -29,5 +29,41 @@
     border: 1px solid #ccc; /* Optional: border around graph */
   }
 
-
+  .lookUpContainer {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .search-bars {
+    display: flex;
+    justify-content: center; /* Align the search bars horizontally */
+    gap: 20px; /* Space between the two search bars */
+    margin-bottom: 20px; /* Space between search bars and the graph */
+    margin-top: 20px; /* Optional: Add space above the search bars */
+  }
+  
+  .graph-container {
+    display: flex;
+    justify-content: center; /* Center the graph */
+    margin-top: 20px;
+  }
+  
+  .input-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .input-bar button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
   
