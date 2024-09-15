@@ -9,6 +9,7 @@ import Welcome from './Components/Welcome'
 import Connections from './Components/Connections'
 import Background1 from './Components/Background1'
 import NetworkGraph from './Components/NetworkGraph'
+import NetworkGraph2 from './Components/NetworkGraph2'
 import './App.css'
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
       <UserLookup/>
       <div className="graph-container">
         <NetworkGraph />
+      </div>
+
+      <div className="graph-container">
+        <NetworkGraph2 />
       </div>
 
 

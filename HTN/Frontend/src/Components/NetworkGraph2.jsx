@@ -2,13 +2,13 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 
-const NetworkGraph = () => {
+const NetworkGraph2 = () => {
     const svgRef = useRef();
     const tooltipRef = useRef();
 
     useEffect(() => {
         // Fetch the graph data from the external file
-        d3.json('/graphData.json').then((graph) => {
+        d3.json('/graphData2.json').then((graph) => {
             const svg = d3.select(svgRef.current)
                 .attr('width', 1200)
                 .attr('height', 800);
@@ -98,7 +98,6 @@ const NetworkGraph = () => {
                 .attr('fill', 'white')  // Set text color
                 .style('font-family', 'Montserrat')  // Set font family to Montserrat
                 .style('font-size', '12px')  // Adjust the font size as needed
-                //.style('opacity', 0)  // Make labels invisible
                 .text(d => d.name);  // Display the node's id or any other relevant information
 
             simulation.on('tick', () => {
@@ -141,11 +140,11 @@ const NetworkGraph = () => {
         <>
         <div className='graph-container'>
             <svg ref={svgRef}></svg>
-            <div ref={tooltipRef} cla   ssName="tooltip"></div>
+            <div ref={tooltipRef} className="tooltip"></div>
         </div>
         </>
     );
 };
 
-export default NetworkGraph;
+export default NetworkGraph2;
 
