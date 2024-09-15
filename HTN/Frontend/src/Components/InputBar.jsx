@@ -8,7 +8,7 @@ function InputBar({ value, onChange, handleSearch, onClearSearch }) {
         type="text" 
         value={value} 
         onChange={onChange} 
-        placeholder="Type your query..."
+        placeholder="Type your @:"
       />
       <div className="input-bar-buttons">
         <button onClick={handleSearch}>Search</button>

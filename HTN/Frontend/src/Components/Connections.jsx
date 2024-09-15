@@ -5,7 +5,7 @@ function Connections(){
         <div>
         <div className="connectionsContainer">
             <h1>Connections</h1>
-            <p>Insert instructions for how to use app</p>
+            <p>Type your @ on the left, your friend's @ on the right, and prepare to find common ground!</p>
         </div>
         </div>
     )
