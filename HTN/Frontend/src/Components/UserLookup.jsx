@@ -30,8 +30,8 @@ function UserLookup() {
 
   return (
     <div className="lookUpContainer">
+      {/* Search bars container (side by side) */}
       <div className="search-bars">
-        {/* First Search Bar */}
         <InputBar
           value={searchQuery1}
           onChange={({ target }) => {
@@ -41,7 +41,6 @@ function UserLookup() {
           onClearSearch={onClearSearch1}
         />
 
-        {/* Second Search Bar */}
         <InputBar
           value={searchQuery2}
           onChange={({ target }) => {
@@ -52,7 +51,7 @@ function UserLookup() {
         />
       </div>
 
-      {/* Conditionally render one graph at a time */}
+      {/* Conditionally render one graph at a time below the search bars */}
       <div className="graph-container">
         {showNetworkGraph && <NetworkGraph />}
         {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
