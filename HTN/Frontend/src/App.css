@@ -24,7 +24,8 @@
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     margin-top: 50px;
-    height: 100vh; /* Ensures the container takes full viewport height */
+    height: 150vh; /* Ensures the container takes full viewport height */
+    
   }
   
   svg {
