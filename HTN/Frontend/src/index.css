@@ -288,8 +288,8 @@ footer{
   font-family: "Montserrat";
   padding-left: 10%;
   padding-right:10%;
-
-}
+  margin: 0 auto; /* Center the paragraph horizontally */
+} 
 .connectionsContainer{
   margin-top: 350px;
   padding:30px;
