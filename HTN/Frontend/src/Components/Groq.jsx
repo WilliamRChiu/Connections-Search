@@ -55,20 +55,24 @@ const ChatComponent = () => {
   };
 
   return (
-    <div className="chat-component">
-      <button classname="generator" onClick={handleAPICall} disabled={loading}>
-        {loading ? 'Finding common ground...' : 'Find common ground'}
-      </button>
+    <div>
+      <div className="chat-component">
+        <button classname="generator" onClick={handleAPICall} disabled={loading}>
+          {loading ? 'Finding common ground...' : 'Find common ground'}
+        </button>
 
-      {error && <div className="error">{error}</div>}
-
-      {response && (
-        <div className="response">
-          <h3>Response:</h3>
-          <textarea readOnly value={response} rows="10" cols="50" />
-        </div>
-      )}
+        {error && <div className="error">{error}</div>}
+      </div>
+      <div>
+        {response && (
+          <div className="response">
+            <h3>Response:</h3>
+            <textarea readOnly value={response} rows="10" cols="50" />
+          </div>
+        )}
+      </div>
     </div>
+
   );
 };
 

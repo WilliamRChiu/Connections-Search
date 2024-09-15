@@ -53,11 +53,11 @@ function UserLookup() {
       </div>
 
       {/* Conditionally render one graph at a time below the search bars */}
-    </div>
-      <div className="graph-container">
-      {showNetworkGraph && <NetworkGraph />}
-      {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
-    </div>
+      </div>
+        <div className="graph-container">
+        {showNetworkGraph && <NetworkGraph />}
+        {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
+      </div>
     </>
   );
 }
