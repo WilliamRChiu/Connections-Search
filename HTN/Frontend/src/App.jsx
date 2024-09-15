@@ -8,8 +8,6 @@ import AboutImage from './Components/AboutImage'
 import Welcome from './Components/Welcome'
 import Connections from './Components/Connections'
 import Background1 from './Components/Background1'
-import NetworkGraph from './Components/NetworkGraph'
-import NetworkGraph2 from './Components/NetworkGraph2'
 import Groq from './Components/Groq'
 import './App.css'
 

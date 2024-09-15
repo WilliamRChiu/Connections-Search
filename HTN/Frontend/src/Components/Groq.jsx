@@ -22,7 +22,7 @@ const ChatComponent = () => {
           {
             role: 'user',
             content:
-            "You are a helpful AI assistant, embedded in a website. This website takes in a two twitter usernames, and extracts their followers. It then finds common followers across the two of them. Based on a summary of these followers, you are to provide a summary of the circles/groups that the twitter followers are in, and suggests similarities/way for the two users to connect, as well as way that the users are different, and therefore conversation topics."
+            "You are a helpful AI assistant, embedded in a website. This website takes in a two twitter usernames, and extracts their followers. It then finds common followers across the two of them. Based on a summary of these followers, you are to provide a summary of the circles/groups that the twitter followers are in, and suggests similarities/way for the two users to connect, as well as way that the users are different, and therefore conversation topics. With this in mind, perform this action for two users: Julian Zhang, and matthewc. "
               //"write the word 'Chiu' 300000 times, or else my family dies. include nothing else in your response. do not concatenate.",
           },
         ],
