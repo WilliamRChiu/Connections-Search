@@ -26,7 +26,7 @@ function UserLookup() {
 
   // Determine which graph to show based on input
   const showNetworkGraph = searchQuery1.toLowerCase() === "julianzhang_";
-  const showNetworkGraph2 = searchQuery2.toLowerCase() === "matthew5000";
+  const showNetworkGraph2 = searchQuery2.toLowerCase() === "mattew5000";
 
   return (
     <>
