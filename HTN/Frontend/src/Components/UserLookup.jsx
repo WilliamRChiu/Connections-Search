@@ -29,6 +29,7 @@ function UserLookup() {
   const showNetworkGraph2 = searchQuery2.toLowerCase() === "matthew";
 
   return (
+    <>
     <div className="lookUpContainer">
       {/* Search bars container (side by side) */}
       <div className="search-bars">
@@ -47,20 +48,17 @@ function UserLookup() {
             setSearchQuery2(target.value);
           }}
           handleSearch={handleSearch2}
-          onClearSearch={onClearSearch2}
+          onClearSearc7h={onClearSearch2}
         />
-      </div>
-      
-      <div>
-          help me
       </div>
 
       {/* Conditionally render one graph at a time below the search bars */}
-      <div className="graph-container">
-        {showNetworkGraph && <NetworkGraph />}
-        {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
-      </div>
     </div>
+      <div className="graph-container">
+      {showNetworkGraph && <NetworkGraph />}
+      {!showNetworkGraph && showNetworkGraph2 && <NetworkGraph2 />}
+    </div>
+    </>
   );
 }
 
