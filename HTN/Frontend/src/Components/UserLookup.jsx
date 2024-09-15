@@ -50,6 +50,10 @@ function UserLookup() {
           onClearSearch={onClearSearch2}
         />
       </div>
+      
+      <div>
+          help me
+      </div>
 
       {/* Conditionally render one graph at a time below the search bars */}
       <div className="graph-container">
