@@ -489,9 +489,15 @@ svg {
     margin-left: 6%;
   }
 
+.chat-component {
+  display: flex;              /* Use Flexbox for centering */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  /*height: 100vh;              /* Full viewport height for vertical centering (optional) */
+}
+
 .chat-component button {
   position: flex;
-  margin-left:37%;
   font-size: 17px;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
