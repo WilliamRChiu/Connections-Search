@@ -213,7 +213,6 @@ body{
   padding-bottom: 0.5rem; /* 8px */
   justify-content: center;
   gap:200px;
-  
 
 }
 .lookUpTitle{
@@ -487,6 +486,7 @@ svg {
     margin-left: 10px;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
   }
 
 .chat-component button {
