@@ -95,6 +95,8 @@ const NetworkGraph = () => {
                 .attr('y', d => d.y)
                 .attr('text-anchor', 'middle')  // Center the text horizontally
                 .attr('fill', 'white')  // Set text color
+                .style('font-family', 'Montserrat')  // Set font family to Montserrat
+                .style('font-size', '12px')  // Adjust the font size as needed
                 .text(d => d.name);  // Display the node's id or any other relevant information
 
             simulation.on('tick', () => {
