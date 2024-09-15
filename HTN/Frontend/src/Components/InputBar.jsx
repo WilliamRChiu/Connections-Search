@@ -1,20 +1,21 @@
-import React from "react";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import {IoMdClose} from "react-icons/io"
+import React from 'react';
+import '../App.css'; // Make sure the path is correct
 
-function InputBar({value, onChange, handleSearch, onClearSearch}) {
-    return(
-        <div className="inputContainer">
-            <input type='text' placeholder = "Search Users" className="searchBar"
-            value = {value}
-            onChange = {onChange}/>
-
-            {value&&(
-                <IoMdClose className="closeButton" onClick={onClearSearch}/>)}
-
-            <FaMagnifyingGlass className="magnGlass" onClick={handleSearch}/>
-        </div>
-    )
-    
+function InputBar({ value, onChange, handleSearch, onClearSearch }) {
+  return (
+    <div className="input-bar">
+      <input 
+        type="text" 
+        value={value} 
+        onChange={onChange} 
+        placeholder="Type your query..."
+      />
+      <div className="input-bar-buttons">
+        <button onClick={handleSearch}>Search</button>
+        <button onClick={onClearSearch}>Clear</button>
+      </div>
+    </div>
+  );
 }
-export default InputBar
+
+export default InputBar;

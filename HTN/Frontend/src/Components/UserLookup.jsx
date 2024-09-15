@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InputBar from "./InputBar";
+import InputBar from "./InputBar"; // Make sure the path is correct
 import NetworkGraph from "./NetworkGraph"; // Import NetworkGraph
 import NetworkGraph2 from "./NetworkGraph2"; // Import NetworkGraph2
 import '../App.css';  // Import App.css, adjust the path as necessary
