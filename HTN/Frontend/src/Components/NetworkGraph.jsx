@@ -10,8 +10,8 @@ const NetworkGraph = () => {
         // Fetch the graph data from the external file
         d3.json('/graphData.json').then((graph) => {
             const svg = d3.select(svgRef.current)
-                .attr('width', 1600)
-                .attr('height', 1000);
+                .attr('width', 1200)
+                .attr('height', 800);
             
             const tooltip = d3.select(tooltipRef.current)
                 .style('position', 'absolute')
@@ -56,7 +56,7 @@ const NetworkGraph = () => {
                 .attr('r', d => Math.cbrt(d.followers) * 2)  // Scale radius based on followers
                 .attr('fill', d => {
                     // Change the color of the node with id 1 to red
-                    if (d.id === "0") return 'slateblue';  // Node with id 1 is red
+                    if (d.id === "0" || d.id === "38") return 'slateblue';  // Node with id 1 is red
                     return 'steelblue';  // Default color for other nodes
                 })
                 .call(d3.drag()
@@ -134,8 +134,10 @@ const NetworkGraph = () => {
 
     return (
         <>
+        <div className='graph-container'>
             <svg ref={svgRef}></svg>
             <div ref={tooltipRef} className="tooltip"></div>
+        </div>
         </>
     );
 };

@@ -14,8 +14,23 @@
     white-space: nowrap;
   }
   
-  /* App.css */
+  /* App.css 
   h1 {
     color: white; 
+  } */
+
+  .graph-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Ensures the container takes full viewport height */
   }
+  
+  svg {
+    max-width: 100%; /* Ensure SVG scales properly */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Optional: border around graph */
+  }
+
+
   

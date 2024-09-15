@@ -1,6 +1,6 @@
 {
   "nodes": [
-    {"id":"0","name":"Julian Zhang","followers":"45"},
+    {"id":"0","name":"Julian Zhang","followers":"1000"},
     {"id":"1","name":"Jiao Deng","followers":"1"},
     {"id":"2","name":"Armin Safavi","followers":"244"},
     {"id":"3","name":"gianna","followers":"35"},
@@ -38,7 +38,7 @@
     {"id":"35","name":"chengus","followers":"18"},
     {"id":"36","name":"Kenny","followers":"23"},
     {"id":"37","name":"lays","followers":"25"},
-    {"id":"38","name":"matthewc","followers":"40"},
+    {"id":"38","name":"matthewc","followers":"1000"},
     {"id":"39","name":"orb","followers":"29"},
     {"id":"40","name":"matt","followers":"90"},
     {"id":"41","name":"stephanie","followers":"24"},

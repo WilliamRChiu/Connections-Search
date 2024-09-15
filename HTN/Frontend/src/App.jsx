@@ -31,7 +31,9 @@ function App() {
       <Connections/>
 
       <UserLookup/>
-      <NetworkGraph/>
+      <div className="graph-container">
+        <NetworkGraph />
+      </div>
 
 
       
