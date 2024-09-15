@@ -31,8 +31,8 @@ const NetworkGraph2 = () => {
             const height = 800;
 
             const simulation = d3.forceSimulation(graph.nodes)
-                .force('link', d3.forceLink(graph.links).id(d => d.id).distance(150))  // Reduce link distance
-                .force('charge', d3.forceManyBody().strength(-600))  // Increase negative charge to repel nodes more
+                .force('link', d3.forceLink(graph.links).id(d => d.id).distance(10))  // Reduce link distance
+                .force('charge', d3.forceManyBody().strength(-1000))  // Increase negative charge to repel nodes more
                 .force('center', d3.forceCenter(width / 2, height / 2));  // Nodes gravitate to the center
         
 
