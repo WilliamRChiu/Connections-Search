@@ -469,3 +469,73 @@ svg {
 .input-bar button:hover { 
   background-color: #555; /* Darker background on hover */
 }
+.response textarea{
+    display: flex;
+    width: 95%;         
+    height: 400px;
+    background-color: #000000;  
+    color:white; 
+    font-family: "montserrat", "arial";    /* Adjust the height as needed */
+    overflow: hidden;    /* Hide the scrollbar */
+    border: none;        /* Remove the border */
+    resize: none;        /* Prevent the user from resizing the textarea */
+    outline: none;       /* Remove the focus outline */
+    padding: 10px;       /* Optional: Add padding for better readability */
+    font-size: 16px;  
+    border: 1px solid rgb(173, 173, 255);   
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.chat-component button {
+  position: flex;
+  font-size: 17px;
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-component .generator:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-component .generator:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-component .generator::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.chat-component .generator::after {
+  background-color: #fff;
+}
+
+.chat-component .generator:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
