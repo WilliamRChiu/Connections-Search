@@ -471,7 +471,7 @@ svg {
 }
 .response textarea{
     display: flex;
-    width: 95%;         
+    width: 85%;         
     height: 400px;
     background-color: #000000;  
     color:white; 
@@ -482,15 +482,16 @@ svg {
     outline: none;       /* Remove the focus outline */
     padding: 10px;       /* Optional: Add padding for better readability */
     font-size: 16px;  
-    border: 1px solid rgb(173, 173, 255);   
+    border: 1px solid rgb(255, 255, 255);   
     margin-left: 10px;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    margin-left: 6%;
   }
 
 .chat-component button {
   position: flex;
+  margin-left:37%;
   font-size: 17px;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
