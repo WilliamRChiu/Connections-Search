@@ -27,13 +27,14 @@ const NetworkGraph = () => {
                 .style('max-width', '200px')
                 .style('white-space', 'nowrap');
 
-            const width = 800;
-            const height = 600;
+            const width = 1200;
+            const height = 800;
 
             const simulation = d3.forceSimulation(graph.nodes)
-                .force('link', d3.forceLink(graph.links).id(d => d.id).distance(200))
-                .force('charge', d3.forceManyBody().strength(-400))
-                .force('center', d3.forceCenter(width / 2, height / 2));
+                .force('link', d3.forceLink(graph.links).id(d => d.id).distance(150))  // Reduce link distance
+                .force('charge', d3.forceManyBody().strength(-600))  // Increase negative charge to repel nodes more
+                .force('center', d3.forceCenter(width / 2, height / 2));  // Nodes gravitate to the center
+        
 
             svg.selectAll('*').remove(); // Clear previous render
 
