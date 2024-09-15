@@ -399,6 +399,8 @@ footer{
   }
 }
 
+/* button styling */
+
 .graph-container {
   display: flex;
   justify-content: center; /* Centers horizontally */
@@ -415,6 +417,7 @@ svg {
 }
 
 .lookUpContainer {
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -428,8 +431,9 @@ svg {
 }
 
 .graph-container {
+  
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   margin-top: 20px;
 }
 
