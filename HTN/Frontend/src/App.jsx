@@ -39,6 +39,11 @@ function App() {
       <div className="graph-container">
         <NetworkGraph2 />
       </div>
+            <div className="App">
+      <Groq/>
+      </div>
+      <br/>
+      <br/>
 
 
       
