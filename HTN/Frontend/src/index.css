@@ -309,7 +309,8 @@ footer{
   display:flex;
   align-items: center;
   justify-content: center;
-  left:25%;
+
+  width: 100%;
   
 }
 .Footer-Full footer{
@@ -470,24 +471,28 @@ svg {
   background-color: #555; /* Darker background on hover */
 }
 .response textarea{
-    display: flex;
-    width: 85%;         
-    height: 400px;
-    background-color: #000000;  
-    color:white; 
-    font-family: "montserrat", "arial";    /* Adjust the height as needed */
-    overflow: hidden;    /* Hide the scrollbar */
-    border: none;        /* Remove the border */
-    resize: none;        /* Prevent the user from resizing the textarea */
-    outline: none;       /* Remove the focus outline */
-    padding: 10px;       /* Optional: Add padding for better readability */
-    font-size: 16px;  
-    border: 1px solid rgb(255, 255, 255);   
-    margin-left: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 6%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 10%;
+  width: 75%;
+  /*margin-right: 10%;*/
+
+  height: 400px;
+  background-color: #000000;  
+  color:white; 
+  font-family: "montserrat", "arial";
+  overflow: hidden;
+  /*border: none;*/
+  /*resize: none;*/
+  /*outline: none;*/
+  padding: 40px;
+  font-size: 16px;  
+  border: 1px solid rgb(255, 255, 255);   
+
+
+}
 
 .chat-component {
   display: flex;              /* Use Flexbox for centering */
@@ -497,6 +502,7 @@ svg {
 }
 
 .chat-component button {
+  margin-top: 40px;
   position: flex;
   font-size: 17px;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
