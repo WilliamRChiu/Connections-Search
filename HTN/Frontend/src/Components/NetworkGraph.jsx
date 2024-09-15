@@ -23,7 +23,8 @@ const NetworkGraph = () => {
                 .style('pointer-events', 'none')
                 .style('opacity', 0)
                 .style('box-shadow', '0 4px 6px rgba(0, 0,  0, 0.1)')
-                .style('font-size', '12px')
+                .style('font-family', 'Montserrat')  // Set font family to Montserrat
+                .style('font-size', '12px')  // Adjust the font size as needed
                 .style('max-width', '200px')
                 .style('white-space', 'nowrap');
 
