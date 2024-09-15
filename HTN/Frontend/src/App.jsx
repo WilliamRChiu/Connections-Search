@@ -10,6 +10,7 @@ import Connections from './Components/Connections'
 import Background1 from './Components/Background1'
 import NetworkGraph from './Components/NetworkGraph'
 import NetworkGraph2 from './Components/NetworkGraph2'
+import Groq from './Components/Groq'
 import './App.css'
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       <div className="graph-container">
         <NetworkGraph2 />
       </div>
-
+      <Groq/>
+      <br/>
 
       
       <Footer/>
