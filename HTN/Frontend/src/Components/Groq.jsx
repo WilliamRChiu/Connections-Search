@@ -57,7 +57,7 @@ const ChatComponent = () => {
   return (
     <div className="chat-component">
       <h2>Groq Chat TEST</h2>
-      <button onClick={handleAPICall} disabled={loading}>
+      <button classname="generator" onClick={handleAPICall} disabled={loading}>
         {loading ? 'Loading...' : 'Generate Response'}
       </button>
 
