@@ -26,12 +26,11 @@ function App() {
       <br/>
       <br/>
       <About/>
-      <AboutImage/>
       <br/>
       <Connections/>
 
       <UserLookup/>
-      
+
       <Groq/>
       <br/>
 

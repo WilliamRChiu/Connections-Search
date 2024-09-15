@@ -57,7 +57,8 @@ const NetworkGraph2 = () => {
                 .attr('r', d => Math.cbrt(d.followers) * 2)  // Scale radius based on followers
                 .attr('fill', d => {
                     // Change the color of the node with id 1 to red
-                    if (d.id === "0" || d.id === "38") return 'slateblue';  // Node with id 1 is red
+                    if (d.id === "0") return 'slateblue';  // Node with id 1 is red
+                    if (d.id === "38") return 'lightcoral';
                     return 'steelblue';  // Default color for other nodes
                 })
                 .call(d3.drag()
