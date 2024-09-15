@@ -58,7 +58,7 @@ const ChatComponent = () => {
     <div className="chat-component">
       <h2>Groq Chat TEST</h2>
       <button classname="generator" onClick={handleAPICall} disabled={loading}>
-        {loading ? 'Loading...' : 'Generate Response'}
+        {loading ? 'Finding common ground...' : 'Find common ground'}
       </button>
 
       {error && <div className="error">{error}</div>}
