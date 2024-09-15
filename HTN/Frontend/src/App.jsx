@@ -8,7 +8,7 @@ import AboutImage from './Components/AboutImage'
 import Welcome from './Components/Welcome'
 import Connections from './Components/Connections'
 import Background1 from './Components/Background1'
-import GraphVisual from './Components/GraphVisual'
+import NetworkGraph from './Components/NetworkGraph'
 import './App.css'
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
       <Connections/>
 
       <UserLookup/>
-      <GraphVisual/>
+      <NetworkGraph/>
 
 
       

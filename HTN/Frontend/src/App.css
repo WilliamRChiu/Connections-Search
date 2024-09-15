@@ -1,0 +1,21 @@
+/* src/App.css */
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 6px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 12px;
+    max-width: 200px;
+    white-space: nowrap;
+  }
+  
+  /* App.css */
+  h1 {
+    color: white; 
+  }
+  
