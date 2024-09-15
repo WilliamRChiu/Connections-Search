@@ -243,7 +243,7 @@ footer{
 
   display: inline-block;
   width:50%;
-  padding-top: 40px;
+  padding-top: 0px;
   animation: slide_up 2s ease forwards;
   animation-iteration-count: 1;
   animation-delay:calc(2s*var(--i));
@@ -292,7 +292,7 @@ footer{
   margin: 0 auto; /* Center the paragraph horizontally */
 } 
 .connectionsContainer{
-  margin-top: 100px;
+  margin-top: 30px;
   padding:30px;
   display:flex;
   justify-content: center;
