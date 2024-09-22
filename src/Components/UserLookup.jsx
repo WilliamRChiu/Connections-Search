@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import InputBar from "./InputBar"; // Ensure correct import paths
 import NetworkGraph from "./NetworkGraph"; 
 import NetworkGraph2 from "./NetworkGraph2"; 
-import '../App.css';  // Adjust path as necessary
 
 function UserLookup() {
   const [searchQuery1, setSearchQuery1] = useState(""); // State for the first input

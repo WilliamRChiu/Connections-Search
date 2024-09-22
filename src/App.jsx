@@ -9,7 +9,6 @@ import Welcome from './Components/Welcome';
 import Connections from './Components/Connections';
 import Background1 from './Components/Background1';
 import Groq from './Components/Groq';
-import './App.css';
 
 function App() {
   return (

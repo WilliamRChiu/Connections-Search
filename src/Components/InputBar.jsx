@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css'; // Make sure the path is correct
 
 function InputBar({ value, onChange, handleSearch, onClearSearch }) {
   return (
